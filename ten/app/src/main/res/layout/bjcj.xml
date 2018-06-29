@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF8E1"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Сборная Германии проиграла Южной Корее в решающем матче группового этапа
+В преддверии заключительного круга группового этапа чемпионата мира у сборной Германии были все шансы на продолжение борьбы за путевку в плей-офф. Казалось, что все невзгоды и новообретенные седые волосы немецких болельщиков остались позади — в предыдущем поединке со шведами. Бундестим тогда спаслась благодаря феноменальному голу Тони Крооса со штрафного на последних секундах. Команде Йоахима Лева нужно было только обыгрывать более чем скромную сборную Южной Кореи, до сего момента не одержавшую на нынешнем мундиале ни одной победы. Все пошло совсем не по плану — в дополнительное время корейцы дважды забили и оставили немцев за бортом мирового первенства."
+        android:textColor="#000000"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/qwez"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Очень жаль"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="148dp" />
+
+</android.support.constraint.ConstraintLayout>

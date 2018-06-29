@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F8E9">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="362dp"
+        android:layout_height="291dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:text="«Теперь уже могут и проиграть»
+«Фан-айди ваш покажите», — хмурый полицейский на входе на платформу Казанского вокзала вместо приветствия возвращает в суровую российскую реальность. Водружаю аккредитацию на шею — и стражи порядка, улыбнувшись, расступаются передо мной, открывая дорогу на праздник футбола, захвативший города — организаторы мундиаля.
+
+Длиннющий двухэтажный поезд «Москва — Самара» готов к отправлению — народ толпами валит на перрон, рассаживаясь по вагонам под чутким руководством исключительно русскоговорящих проводников и временами говорящих по-английски улыбчивых волонтеров (которые, к сожалению, при отправлении остаются на этом самом перроне, оставляя путников тет-а-тет с олдскульными сотрудницами железной дороги). Подавляющее большинство пассажиров — россияне, уругвайцев совсем мало, они загружаются организованными группками. То ли поезда для них — слишком большая экзотика, то ли подавляющее большинство южноамериканских фанатов уже десантировалось на берегах Волги, но поезд так и трогается, почти целиком заполненный российскими болельщиками."
+        android:textColor="#000000"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/klab"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="6dp"
+        android:layout_height="6dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        tools:layout_editor_absoluteY="272dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Ok,я прочитал это!"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
+
+</android.support.constraint.ConstraintLayout>
